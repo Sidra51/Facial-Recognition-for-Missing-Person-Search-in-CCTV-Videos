@@ -48,46 +48,29 @@ Edit
 
 ```bash
 git clone https://github.com/Sidra51/Facial-Recognition-for-Missing-Person-Search-in-CCTV-Videos.git
-cd Facial-Recognition-for-Missing-Person-Search-in-CCTV-Videos
+
 2. Install dependencies
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 3. Prepare your dataset
 Place clear frontal face images of missing persons in the dataset/ folder. Filenames should be the person's name or ID.
 
-4. Generate encodings
-bash
-Copy
-Edit
-python encode_faces.py
-5. Run the recognition script
-bash
-Copy
-Edit
+3. Run the recognition script
 python recognize.py
 You can modify the video input in the script (recognize.py) to use live feed or a saved video file.
-
+```
 Output
-Names of matched persons displayed on-screen in real-time
-
-Optional: Save frames of matched detections in a separate folder
-
-Log file or terminal output showing match confidence
+> Names of matched persons displayed on-screen in real-time
+> Optional: Save frames of matched detections in a separate folder
+> Log file or terminal output showing match confidence
 
 Limitations
-Accuracy depends on video quality, lighting, and angle of face
-
-Not effective with occluded or profile faces
-
-Requires clear reference images for reliable matches
+> Accuracy depends on video quality, lighting, and angle of face
+> Not effective with occluded or profile faces
+> Requires clear reference images for reliable matches
 
 Future Enhancements
-Integrate with public databases or police records
-
-Support for low-resolution face enhancement
-
-Add GUI using Streamlit or Flask
-
-Email/SMS alert system
+> Integrate with public databases or police records
+> Support for low-resolution face enhancement
+> Add GUI using Streamlit or Flask
+> Email/SMS alert system
